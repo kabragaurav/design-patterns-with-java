@@ -10,7 +10,11 @@ import java.time.LocalDateTime;
 public class Logger {
     PrintStream writer;
 
-    private static Logger logger = new Logger();
+    // eager initialization - object creation is expensive
+    //private static Logger logger = new Logger();
+
+    // lazy initialization
+    private static Logger logger;
 
     private Logger() {
         LocalDateTime now = LocalDateTime.now();
@@ -18,18 +22,21 @@ public class Logger {
 
         try {
             writer = new PrintStream(name);
-            System.out.println("File created");
+            System.out.println(String.format("File %s created", name));
         } catch (FileNotFoundException ex) {
             ex.printStackTrace();
             System.exit(0);
         } 
     }
 
-    public void writeMessage(String msg) {
+    synchronized public void writeMessage(String msg) {
         writer.println(msg);
     }
 
     public static Logger getLogger() {
+        if (null == logger) {
+            logger = new Logger();
+        }
         return logger;
     }
 }
