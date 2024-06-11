@@ -19,7 +19,7 @@ public class MathOperatorFactory {
             case "/": 
                 return new Divider();
             default: 
-                return null;
+                throw new UnsupportedOperationException("Unsupported operator symbol");
         }
     }
     

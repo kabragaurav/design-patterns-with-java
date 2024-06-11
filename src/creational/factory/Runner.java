@@ -12,5 +12,6 @@ public class Runner {
         System.out.println(MathOperatorFactory.getMathOperator("*").operate(1, 2));
         System.out.println(MathOperatorFactory.getMathOperator("/").operate(1, 2));
         System.out.println(MathOperatorFactory.getMathOperator("/").operate(1, 0));
+        System.out.println(MathOperatorFactory.getMathOperator("//").operate(1, 0));
     }
 }

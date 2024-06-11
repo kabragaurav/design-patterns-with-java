@@ -19,6 +19,10 @@ Disadv:
 ### Factory
 Singleton, in some sense, is also a factory pattern but returns only one type of object.
 
-Also, in factory pattern, clients do not even know the name of class for which object is to be generated.
+Also, in factory pattern, clients do not even know the name of class for which object is to be generated. They only know Factory name.
+
+E.g. DB Connector Factory using getConnection method, depending on DB driver.
+Different vendors implement the JDBC interfaces.
+
 ![](./assets/images/factory.png)
 
