@@ -57,7 +57,9 @@ When we do not have src code, so no modification is possible.
 ### 2. Proxy
 Unlike Adapter, which does "conversion", in Proxy pattern, one object represents another.
 
-Useful in caching responses, where original class fetches from DB but once fetched, proxy caches the response.
+Both RealSubject and Proxy must have same method signatures.
+
+Useful in caching responses (optimizations), where original class fetches from DB but once fetched, proxy caches the response.
 
 ![](./assets/images/proxy.png)
 ![](./assets/images/proxy_eg.png)
