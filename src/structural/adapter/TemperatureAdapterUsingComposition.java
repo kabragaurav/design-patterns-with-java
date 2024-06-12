@@ -1,32 +1,33 @@
 package structural.adapter;
 
+
 /**
- * Using inheritance
- * 
  * @author gauravkabra
  * @since 2024
  */
+ 
+public class TemperatureAdapterUsingComposition implements ITemperatureAdapter {
 
-public class TemperatureAdapter extends Celsius implements ITemperatureAdapter {
+    private Celsius celsius = new Celsius();
 
     @Override
     public void setInCelcius(double c) {
-       super.setTemperature(c);
+        celsius.setTemperature(c);
     }
 
     @Override
     public void setInFahrenheit(double f) {
-        super.setTemperature(convertToCelsius(f));
+        celsius.setTemperature(convertToCelsius(f));
     }
 
     @Override
     public double getInCelcius() {
-        return super.getTemperature();
+        return celsius.getTemperature();
     }
 
     @Override
     public double getInFahrenheit() {
-       return convertToFahrenheit(super.getTemperature());
+       return convertToFahrenheit(celsius.getTemperature());
     }
 
     private double convertToFahrenheit(double c) {
@@ -36,4 +37,5 @@ public class TemperatureAdapter extends Celsius implements ITemperatureAdapter {
     private double convertToCelsius(double f) {
         return (f-32) * 5/9;
     }
+
 }
