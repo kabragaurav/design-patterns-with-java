@@ -50,5 +50,14 @@ In Java, unlike Python, we have to implement our own shallow/deep copy methods.
 # Structural
 
 ### 1. Adapter
+When we do not have src code, so no modification is possible.
+
 ![](./assets/images/adapter.png)
 
+### 2. Proxy
+Unlike Adapter, which does "conversion", in Proxy pattern, one object represents another.
+
+Useful in caching responses, where original class fetches from DB but once fetched, proxy caches the response.
+
+![](./assets/images/proxy.png)
+![](./assets/images/proxy_eg.png)
