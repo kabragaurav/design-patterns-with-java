@@ -47,3 +47,8 @@ In Java, unlike Python, we have to implement our own shallow/deep copy methods.
 
 ![](./assets/images/proto.png)
 
+# Structural
+
+### 1. Adapter
+![](./assets/images/adapter.png)
+

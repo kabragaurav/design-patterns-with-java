@@ -3,6 +3,11 @@ package creational.prototype;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author gauravkabra
+ * @since 2024
+ */
+
 public class DeepEmployee implements Cloneable {
     private int empId;
     private String empName;
@@ -42,17 +47,6 @@ public class DeepEmployee implements Cloneable {
     public void setSalary(double salary) {
         this.salary = salary;
     }
-
-    @Override
-    public Object clone() throws CloneNotSupportedException {  
-        DeepEmployee newDeepEmployee = (DeepEmployee) super.clone(); 
-
-        List<String> newSkills = new ArrayList<>();
-        newSkills.addAll(skills);
-        
-        newDeepEmployee.setSkills(newSkills);
-        return newDeepEmployee;
-    }
     
     public List<String> getSkills() {
         return skills;
@@ -64,6 +58,17 @@ public class DeepEmployee implements Cloneable {
 
     public void addSkill(String skill) {
         skills.add(skill);
+    }
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {  
+        DeepEmployee newDeepEmployee = (DeepEmployee) super.clone(); 
+
+        List<String> newSkills = new ArrayList<>();
+        newSkills.addAll(skills);
+        
+        newDeepEmployee.setSkills(newSkills);
+        return newDeepEmployee;
     }
 
     @Override

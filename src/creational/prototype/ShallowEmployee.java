@@ -3,6 +3,11 @@ package creational.prototype;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author gauravkabra
+ * @since 2024
+ */
+
 public class ShallowEmployee implements Cloneable {
     private int empId;
     private String empName;
@@ -43,6 +48,14 @@ public class ShallowEmployee implements Cloneable {
         this.salary = salary;
     }
 
+    public void setSkills(List<String> skills) {
+        this.skills = skills;
+    }
+
+    public void addSkill(String skill) {
+        skills.add(skill);
+    }
+
     @Override
     public Object clone() throws CloneNotSupportedException {  
         return super.clone(); 
@@ -50,14 +63,6 @@ public class ShallowEmployee implements Cloneable {
     
     public List<String> getSkills() {
         return skills;
-    }
-
-    public void setSkills(List<String> skills) {
-        this.skills = skills;
-    }
-
-    public void addSkill(String skill) {
-        skills.add(skill);
     }
 
     @Override
