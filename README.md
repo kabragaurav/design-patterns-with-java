@@ -38,4 +38,12 @@ Factory for factories. E.g. a factory that returns Maruti factory or Skoda facto
 
 ![](./assets/images/abstract_factory.png)
 ![](./assets/images/abstract_factory_eg.png)
+![](./assets/images/abstract_factory_comp.png)
+
+### 4. Prototype
+For cloning - shallow or deep.
+
+In Java, unlike Python, we have to implement our own shallow/deep copy methods.
+
+![](./assets/images/proto.png)
 

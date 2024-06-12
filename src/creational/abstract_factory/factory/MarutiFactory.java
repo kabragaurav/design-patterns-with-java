@@ -8,6 +8,9 @@ import creational.abstract_factory.product.Transmission;
 /**
  * ConcreteFactoryA
  * 
+ * We can also bring MarutiEngine and MarutiTransmission here as inner class, 
+ * instead of their own classes
+ * 
  * @author gauravkabra
  * @since 2024
  */

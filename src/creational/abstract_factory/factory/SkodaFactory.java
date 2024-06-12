@@ -8,6 +8,9 @@ import creational.abstract_factory.product.Transmission;
 /**
  * ConcreteFactoryB
  * 
+ * We can also bring SkodaEngine and SkodaTransmission here as inner class, 
+ * instead of their own classes
+ * 
  * @author gauravkabra
  * @since 2024
  */
