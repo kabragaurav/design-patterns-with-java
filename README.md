@@ -25,6 +25,8 @@ E.g. DB Connector Factory using getConnection method, depending on DB driver. E.
 ```
 Connection conn = DriverManager.getConnection("url", "uname", "pwd");
 ```
+Now different DB vendors have different URL formats.
+
 Different vendors implement the JDBC interfaces.
 
 ![](./assets/images/factory.png)

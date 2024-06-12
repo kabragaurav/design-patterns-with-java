@@ -1,4 +1,4 @@
-package creational.abstract-factory.product;
+package creational.abstract_factory.product;
 
 /**
  * Abstract ProductA
@@ -9,5 +9,5 @@ package creational.abstract-factory.product;
 
 
 public interface Engine {
-    void makeEngine();
+    void describeEngine();
 }

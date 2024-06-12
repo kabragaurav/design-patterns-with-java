@@ -9,7 +9,7 @@ package creational.abstract_factory.product;
 
 public class MarutiEngine implements Engine {
     @Override
-    public void makeEngine() {
+    public void describeEngine() {
         System.out.println("Maruti engine made");
     }
 }

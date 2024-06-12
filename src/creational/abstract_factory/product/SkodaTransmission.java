@@ -10,7 +10,7 @@ package creational.abstract_factory.product;
 public class SkodaTransmission implements Transmission {
 
     @Override
-    public void makeTransmission() {
+    public void describeTransmission() {
         System.out.println("Skoda transmission made");
     }
 

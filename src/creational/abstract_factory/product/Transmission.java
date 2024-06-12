@@ -1,4 +1,4 @@
-package creational.abstract-factory.product;
+package creational.abstract_factory.product;
 
 /**
  * Abstract ProductB
@@ -8,5 +8,5 @@ package creational.abstract-factory.product;
  */
 
 public interface Transmission {
-    void makeTransmission();
+    void describeTransmission();
 }
