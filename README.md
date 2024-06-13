@@ -102,3 +102,14 @@ Unlike inheritance, decorator is plug-n-play.
 ![](./assets/images/strategy.png)
 ![](./assets/images/no_inheritance.png)
 ![](./assets/images/yes_strategy.png)
+
+### 1. Chain of Responsibility
+When enter corporate SEZ, multiple layer of security. Similarly in govt work, file moves through hierarchy/layers.
+
+Useful in performing incremental operations (pipeline), doing auth etc.
+
+![](./assets/images/cor.png)
+
+If 100 cannot handle 2140, it delegates to 50 and so on:
+
+![](./assets/images/cor_eg.png)
