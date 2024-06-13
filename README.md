@@ -94,3 +94,11 @@ Base class will be same to have common behaviour.
 Unlike inheritance, decorator is plug-n-play.
 
 ![](./assets/images/decorator_vs_inherit.png)
+
+# Behavioral
+![](./assets/images/behave.png)
+### 1. Strategy
+
+![](./assets/images/strategy.png)
+![](./assets/images/no_inheritance.png)
+![](./assets/images/yes_strategy.png)
