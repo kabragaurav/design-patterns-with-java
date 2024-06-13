@@ -99,6 +99,12 @@ Unlike inheritance, decorator is plug-n-play.
 ![](./assets/images/behave.png)
 ### 1. Strategy
 
+With composition, it's easy to change behavior on the fly with Dependency Injection / Setters. Inheritance is more rigid as most languages do not allow you to derive from more than one type.
+
+Does TypeB want to expose the complete interface (all public methods no less) of TypeA? Indicates Inheritance.
+
+Does TypeB want only some/part of the behavior exposed by TypeA? Indicates need for Composition.
+
 ![](./assets/images/strategy.png)
 ![](./assets/images/no_inheritance.png)
 ![](./assets/images/yes_strategy.png)
@@ -106,9 +112,11 @@ Unlike inheritance, decorator is plug-n-play.
 ### 1. Chain of Responsibility
 When enter corporate SEZ, multiple layer of security. Similarly in govt work, file moves through hierarchy/layers.
 
-Useful in performing incremental operations (pipeline), doing auth etc.
-
 ![](./assets/images/cor.png)
+
+Useful in performing incremental operations (pipeline), doing auth then logging and so on (Servlet FilterChain).
+
+![](./assets/images/filter_chain.png)
 
 If 100 cannot handle 2140, it delegates to 50 and so on:
 

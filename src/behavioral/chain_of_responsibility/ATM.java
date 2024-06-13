@@ -7,7 +7,8 @@ package behavioral.chain_of_responsibility;
 
 public class ATM {
     public static void main(String[] args) {
-        CurrencyDispenser dispenser = new Currency1000Dispenser();
-        dispenser.dispense(3600);
+        CurrencyDispenser rootDispenser = new Currency1000Dispenser();
+        rootDispenser.dispense(3600);
+        rootDispenser.dispense(2140);
     }
 }
