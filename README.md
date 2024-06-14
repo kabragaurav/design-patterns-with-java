@@ -1,6 +1,8 @@
 # Design Patterns with Java (LLD)
 by Gaurav Kabra
 
+### Read this README as a webpage <a href="https://kabragaurav.github.io/gof-design-patterns/">here</a>
+
 ![](./assets/images/types.png)
 ![](./assets/images/hierarchy.png)
 
@@ -148,4 +150,4 @@ On a complex operation on DB, invoker should not know what is to execute. Whatev
 ---
 
 # Resources
-- https://sourcemaking.com/
+<a href="https://sourcemaking.com/">https://sourcemaking.com</a>
