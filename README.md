@@ -136,3 +136,16 @@ If 100 cannot handle 2140, it delegates to 50 and so on:
 ##### State vs Chain of Responsibility
 - In State, they act on same object, so that they form finite state automaton
 - In CoR, each class gets different objects from previous class that does processing and then passes
+
+### 5. Command
+We don't need if we use Reflection, but that is generally an anti-pattern.
+
+On a complex operation on DB, invoker should not know what is to execute. Whatever instructions you set as a command, it should execute.
+
+![](./assets/images/command.png)
+![](./assets/images/command_2.png)
+
+---
+
+# Resources
+- https://sourcemaking.com/
