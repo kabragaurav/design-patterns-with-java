@@ -109,7 +109,7 @@ Does TypeB want only some/part of the behavior exposed by TypeA? Indicates need 
 ![](./assets/images/no_inheritance.png)
 ![](./assets/images/yes_strategy.png)
 
-### 1. Chain of Responsibility
+### 2. Chain of Responsibility
 When enter corporate SEZ, multiple layer of security. Similarly in govt work, file moves through hierarchy/layers.
 
 ![](./assets/images/cor.png)
@@ -122,7 +122,13 @@ If 100 cannot handle 2140, it delegates to 50 and so on:
 
 ![](./assets/images/cor_eg.png)
 
-### 2. Observer
+### 3. Observer
+1-N dependency, event handling and decoupling
+
 ![](./assets/images/observer.png)
 ![](./assets/images/observer_eg.png)
 
+### 4. State
+![](./assets/images/state.png)
+![](./assets/images/state_eg.png)
+![](./assets/images/state_vs_strategy.png)
