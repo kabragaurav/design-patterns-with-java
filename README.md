@@ -121,3 +121,8 @@ Useful in performing incremental operations (pipeline), doing auth then logging 
 If 100 cannot handle 2140, it delegates to 50 and so on:
 
 ![](./assets/images/cor_eg.png)
+
+### 2. Observer
+![](./assets/images/observer.png)
+![](./assets/images/observer_eg.png)
+
