@@ -13,6 +13,7 @@ public class Fan {
     private State state;
 
     public Fan() {
+        System.out.println("Fan switched off");
         this.state = new OffState();
     }
 

@@ -132,3 +132,7 @@ If 100 cannot handle 2140, it delegates to 50 and so on:
 ![](./assets/images/state.png)
 ![](./assets/images/state_eg.png)
 ![](./assets/images/state_vs_strategy.png)
+
+##### State vs Chain of Responsibility
+- In State, they act on same object, so that they form finite state automaton
+- In CoR, each class gets different objects from previous class that does processing and then passes
